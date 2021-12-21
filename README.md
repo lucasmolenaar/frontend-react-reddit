@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+#Reddit App - Concept opdracht
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Inleiding
+De Reddit applicatie laat op de homepage de 15 _hottest_ posts van dit moment zien. Wanneer de gebruiker op de titel van een post klikt, wordt hij doorgestuurd naar de echte post op de Reddit website.
+In iedere post is te zien onder welke _subreddit_ de post hoort, hoeveel comments de post heeft en hoeveel _upvotes_ hij heeft.
 
-## Available Scripts
+Wanneer de gebruiker klikt op de _subreddit_ naam, wordt hij doorgestuurd naar de _subreddit specificatiepagina_. Op de pagina is informatie over de _subreddit_ te vinden, zoals de titel, een beschrijving, hoeveel _subscribers_ de pagina heeft en een banner afbeelding. Als de _subreddit_ geen banner afbeelding heeft, toont de pagina een standaard afbeelding.
 
-In the project directory, you can run:
+De applicatie maakt gebruik van **react router** om te _switchen_ tussen verschillende pagina's. Daarnaast wordt gebruik gemaakt van **axios** om informatie op te halen via de _reddit API_.
 
-### `npm start`
+##Applicatie starten
+Clone ten eerste het project naar jouw eigen lokale machine. Wanneer je dit hebt gedaan run je het commando `npm init` in de terminal om de `node_modules` te installeren.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Als dit klaar is, run je het commando `npm start` om de applicatie te starten. De browser zal automatisch openen met [http://localhost:3000](http://localhost:3000), waarop de applicatie zal draaien.
