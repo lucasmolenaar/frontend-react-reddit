@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import axios from "axios";
+
 import styles from './SubredditPage.module.scss';
 import notFound from '../../assets/notfound.jpg';
+import numberWithCommas from "../../helpers/numberWithCommas";
+
 import BackToOverview from "../../components/BackToOverview/BackToOverview";
 import LoadingRoller from "../../components/LoadingRoller/LoadingRoller";
 
@@ -43,7 +46,7 @@ const SubredditPage = () => {
                 {subreddit['public_description']}
             </p>
 
-            <p className={styles.subscribers}>Subscribers: {subreddit.subscribers}</p>
+            <p className={styles.subscribers}>Subscribers: {numberWithCommas(subreddit.subscribers)}</p>
 
             <BackToOverview />
         </div>

@@ -3,6 +3,8 @@ import {Link} from "react-router-dom";
 
 import styles from './Post.module.scss';
 
+import numberWithCommas from "../../helpers/numberWithCommas";
+
 const Post = ({ data }) => {
     return (
         <li className={styles.post}>
@@ -11,8 +13,8 @@ const Post = ({ data }) => {
                 <Link to={`/subreddit/${data.subreddit}`}>
                     {data['subreddit_name_prefixed']}
                 </Link>&nbsp;
-                | {data['num_comments']} comments
-                | {data.ups} ups
+                | {numberWithCommas(data['num_comments'])} comments
+                | {numberWithCommas(data.ups)} ups
             </p>
         </li>
     );
