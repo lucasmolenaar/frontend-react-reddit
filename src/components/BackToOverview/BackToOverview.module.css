@@ -1,0 +1,17 @@
+.back-to-overview {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 0 5rem;
+}
+.back-to-overview .svg {
+  margin-right: 1rem;
+}
+.back-to-overview .back-link {
+  color: #FF4500;
+  text-decoration: none;
+}
+.back-to-overview .back-link:hover {
+  border-bottom: 1px solid #FF4500;
+}
+
+/*# sourceMappingURL=BackToOverview.module.css.map */

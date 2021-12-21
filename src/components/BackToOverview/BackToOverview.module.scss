@@ -1,0 +1,18 @@
+.back-to-overview {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 0 5rem;
+
+  .svg {
+    margin-right: 1rem;
+  }
+
+  .back-link {
+    color: #FF4500;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px solid #FF4500;
+    }
+  }
+}
